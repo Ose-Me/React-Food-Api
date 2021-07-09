@@ -1,0 +1,118 @@
+.app-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.btn {
+  background-color: #fa9e0d;
+  border: 1px solid #fa9e0d;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  outline: transparent;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  color: #424242;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 0 20px 0 20px;
+}
+
+.card .img-container {
+  height: 250px;
+}
+
+.card .img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 20px 0 20px;
+  object-fit: cover;
+}
+
+.card .heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.card .content {
+  padding: 0.95rem;
+}
+
+.card .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.card .footer .btn {
+  border-radius: 20px 0 0 0;
+  font-size: 3rem;
+  font-weight: 100;
+  padding: 0;
+  height: 70px;
+  width: 85px;
+}
+
+.card .ratings svg {
+  margin-left: 0.2rem;
+}
+.learn-div {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+/* loader */
+#loader-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #fa9e0d;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
